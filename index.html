@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cereales Ducret – Calidad y Tradición</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Opcional: personalizar paleta si quieres otro tono de “pastel” -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              grass: "#68D391", // verde pastel
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-black text-gray-200 font-sans leading-relaxed">
+    <!-- NAVBAR -->
+    <header class="bg-black border-b border-gray-800">
+      <div
+        class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <img src="img/logo-LAD.gif" alt="Cereales Ducret" class="h-10" />
+        <nav class="space-x-6 hidden md:block">
+          <a href="#about" class="text-gray-400 hover:text-grass transition"
+            >Quiénes somos</a
+          >
+          <a href="#products" class="text-gray-400 hover:text-grass transition"
+            >Productos</a
+          >
+          <a href="#contact" class="text-gray-400 hover:text-grass transition"
+            >Contacto</a
+          >
+        </nav>
+        <button
+          id="btn-menu"
+          class="md:hidden text-gray-400 focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+      <div id="menu" class="hidden bg-black border-b border-gray-800 md:hidden">
+        <a
+          href="#about"
+          class="block px-4 py-2 text-gray-400 hover:text-grass transition"
+          >Quiénes somos</a
+        >
+        <a
+          href="#products"
+          class="block px-4 py-2 text-gray-400 hover:text-grass transition"
+          >Productos</a
+        >
+        <a
+          href="#contact"
+          class="block px-4 py-2 text-gray-400 hover:text-grass transition"
+          >Contacto</a
+        >
+      </div>
+    </header>
+
+    <!-- HERO CON FONDO QUE SCROLLEA -->
+    <section
+      class="relative h-screen bg-cover bg-center bg-scroll"
+      style="background-image: url('img/trigo-sunset.jpg')"
+    >
+      <!-- Overlay para contraste -->
+      <div class="absolute inset-0 bg-black/60"></div>
+
+      <!-- Contenido en primer plano -->
+      <div class="relative z-10 flex items-center justify-center h-full px-4">
+        <div class="text-center">
+          <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">
+            Calidad y tradición en cada grano
+          </h1>
+          <p class="text-lg md:text-2xl text-gray-200">
+            Desde la siembra hasta la cosecha, garantizamos excelencia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <main class="max-w-6xl mx-auto px-4 space-y-20 py-16">
+      <!-- QUIÉNES SOMOS -->
+      <section id="about" class="bg-gray-900 p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-semibold mb-4 text-grass">Quiénes somos</h2>
+        <p class="text-gray-300">
+          Somos una empresa familiar con más de <strong>20 años</strong> en el
+          mercado argentino, dedicada a la producción y comercialización de
+          cereales de alta calidad. Nuestro compromiso es ofrecer productos 100%
+          naturales, sostenibles y de primera línea.
+        </p>
+      </section>
+
+      <!-- PRODUCTOS -->
+      <section id="products" class="bg-gray-900 p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-semibold mb-8 text-grass">
+          Nuestros productos
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Tarjeta de producto -->
+          <div
+            class="bg-black rounded-lg overflow-hidden border border-gray-800 hover:border-grass transition-shadow shadow-sm hover:shadow-lg"
+          >
+            <img
+              src="img/maiz.jpg"
+              alt="Maíz"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold text-xl mb-2 text-white">Maíz</h3>
+              <p class="text-gray-400">
+                Semilla certificada de alta germinación, ideal para producción
+                intensiva.
+              </p>
+            </div>
+          </div>
+          <!-- Repite para Trigo, Sorgo… -->
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contact" class="bg-gray-900 p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-semibold mb-4 text-grass">Contacto</h2>
+        <p class="mb-6 text-gray-300">
+          Escribinos a
+          <a
+            href="mailto:info@cerealesducret.com.ar"
+            class="text-grass hover:underline"
+            >info@cerealesducret.com.ar</a
+          >
+          o completá el formulario:
+        </p>
+        <form
+          action="https://formspree.io/f/tu-form-id"
+          method="POST"
+          class="grid grid-cols-1 md:grid-cols-2 gap-4"
+        >
+          <input
+            type="email"
+            name="email"
+            placeholder="Tu correo"
+            required
+            class="bg-gray-800 border border-gray-700 rounded p-3 focus:outline-none focus:ring-2 focus:ring-grass text-gray-200"
+          />
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Tu mensaje"
+            required
+            class="bg-gray-800 border border-gray-700 rounded p-3 focus:outline-none focus:ring-2 focus:ring-grass text-gray-200"
+          ></textarea>
+          <button
+            type="submit"
+            class="md:col-span-2 bg-grass text-black py-3 rounded font-medium hover:bg-green-500 transition"
+          >
+            Enviar mensaje
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-black border-t border-gray-800 py-6">
+      <div class="text-center text-gray-500">
+        &copy; 2025 Cereales Ducret – Todos los derechos reservados.
+      </div>
+    </footer>
+
+    <!-- JS menú móvil -->
+    <script>
+      document
+        .getElementById("btn-menu")
+        .addEventListener("click", () =>
+          document.getElementById("menu").classList.toggle("hidden")
+        );
+    </script>
+  </body>
+</html>
