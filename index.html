@@ -12,14 +12,15 @@
         theme: {
           extend: {
             colors: {
-              grass: "#68D391", // verde pastel
+              moss: "#556B2F",
+              mossLight: "#6B8E23",
             },
           },
         },
       };
     </script>
   </head>
-  <body class="bg-black text-gray-200 font-sans leading-relaxed">
+  <body class="bg-black text-moss font-sans leading-relaxed">
     <!-- NAVBAR -->
     <header class="bg-black border-b border-gray-800">
       <div
@@ -27,19 +28,19 @@
       >
         <img src="img/logo-LAD.gif" alt="Cereales Ducret" class="h-10" />
         <nav class="space-x-6 hidden md:block">
-          <a href="#about" class="text-gray-400 hover:text-grass transition"
+          <a href="#about" class="text-moss-light hover:text-moss transition"
             >Quiénes somos</a
           >
-          <a href="#products" class="text-gray-400 hover:text-grass transition"
+          <a href="#products" class="text-moss-light hover:text-moss transition"
             >Productos</a
           >
-          <a href="#contact" class="text-gray-400 hover:text-grass transition"
+          <a href="#contact" class="text-moss-light hover:text-moss transition"
             >Contacto</a
           >
         </nav>
         <button
           id="btn-menu"
-          class="md:hidden text-gray-400 focus:outline-none"
+          class="md:hidden text-moss-light focus:outline-none"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -60,17 +61,17 @@
       <div id="menu" class="hidden bg-black border-b border-gray-800 md:hidden">
         <a
           href="#about"
-          class="block px-4 py-2 text-gray-400 hover:text-grass transition"
+          class="block px-4 py-2 text-moss-light hover:text-moss transition"
           >Quiénes somos</a
         >
         <a
           href="#products"
-          class="block px-4 py-2 text-gray-400 hover:text-grass transition"
+          class="block px-4 py-2 text-moss-light hover:text-moss transition"
           >Productos</a
         >
         <a
           href="#contact"
-          class="block px-4 py-2 text-gray-400 hover:text-grass transition"
+          class="block px-4 py-2 text-moss-light hover:text-moss transition"
           >Contacto</a
         >
       </div>
@@ -87,11 +88,12 @@
       <!-- Contenido en primer plano -->
       <div class="relative z-10 flex items-center justify-center h-full px-4">
         <div class="text-center">
-          <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">
+          <h1 class="text-5xl md:text-7xl font-bold text-moss-light mb-4">
             Calidad y tradición en cada grano
           </h1>
-          <p class="text-lg md:text-2xl text-gray-200">
-            Desde la siembra hasta la cosecha, garantizamos excelencia.
+          <p class="text-lg md:text-2xl text-moss">
+            Acompañamos al productor argentino desde la siembra hasta la
+            cosecha.
           </p>
         </div>
       </div>
@@ -99,51 +101,59 @@
 
     <main class="max-w-6xl mx-auto px-4 space-y-20 py-16">
       <!-- QUIÉNES SOMOS -->
+      <div class="p-1 bg-gradient-to-r from-moss to-mossLight rounded-lg">
       <section id="about" class="bg-gray-900 p-8 rounded-lg shadow-lg">
-        <h2 class="text-3xl font-semibold mb-4 text-grass">Quiénes somos</h2>
-        <p class="text-gray-300">
-          Somos una empresa familiar con más de <strong>20 años</strong> en el
-          mercado argentino, dedicada a la producción y comercialización de
-          cereales de alta calidad. Nuestro compromiso es ofrecer productos 100%
-          naturales, sostenibles y de primera línea.
+        <h2 class="text-3xl font-semibold mb-4 text-moss">Quiénes somos</h2>
+        <p class="text-moss-light">
+          Somos una empresa familiar con más de <strong>20 años</strong> de
+          trayectoria en el mercado argentino, dedicada a la producción y
+          comercialización de cereales de alta calidad. Nuestro compromiso es
+          ofrecer productos naturales y sostenibles, manteniendo la excelencia
+          en cada etapa.
         </p>
       </section>
+      </div>
 
       <!-- PRODUCTOS -->
+      <div class="p-1 bg-gradient-to-r from-moss to-mossLight rounded-lg">
       <section id="products" class="bg-gray-900 p-8 rounded-lg shadow-lg">
-        <h2 class="text-3xl font-semibold mb-8 text-grass">
+        <h2 class="text-3xl font-semibold mb-8 text-moss">
           Nuestros productos
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Tarjeta de producto -->
-          <div
-            class="bg-black rounded-lg overflow-hidden border border-gray-800 hover:border-grass transition-shadow shadow-sm hover:shadow-lg"
-          >
-            <img
-              src="img/maiz.jpg"
-              alt="Maíz"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-4">
-              <h3 class="font-semibold text-xl mb-2 text-white">Maíz</h3>
-              <p class="text-gray-400">
-                Semilla certificada de alta germinación, ideal para producción
-                intensiva.
-              </p>
+          <div class="p-1 bg-gradient-to-r from-moss to-mossLight rounded-lg">
+            <div
+              class="bg-black rounded-lg overflow-hidden border border-gray-800 hover:border-moss transition-shadow shadow-sm hover:shadow-lg"
+            >
+              <img
+                src="img/maiz.jpg"
+                alt="Maíz"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="font-semibold text-xl mb-2 text-moss-light">Maíz</h3>
+                <p class="text-moss-light">
+                  Semillas certificadas con alto poder germinativo, ideales para
+                  una producción eficiente.
+                </p>
+              </div>
             </div>
           </div>
           <!-- Repite para Trigo, Sorgo… -->
         </div>
       </section>
+      </div>
 
       <!-- CONTACTO -->
+      <div class="p-1 bg-gradient-to-r from-moss to-mossLight rounded-lg">
       <section id="contact" class="bg-gray-900 p-8 rounded-lg shadow-lg">
-        <h2 class="text-3xl font-semibold mb-4 text-grass">Contacto</h2>
-        <p class="mb-6 text-gray-300">
+        <h2 class="text-3xl font-semibold mb-4 text-moss">Contacto</h2>
+        <p class="mb-6 text-moss-light">
           Escribinos a
           <a
             href="mailto:info@cerealesducret.com.ar"
-            class="text-grass hover:underline"
+            class="text-moss hover:underline"
             >info@cerealesducret.com.ar</a
           >
           o completá el formulario:
@@ -158,28 +168,29 @@
             name="email"
             placeholder="Tu correo"
             required
-            class="bg-gray-800 border border-gray-700 rounded p-3 focus:outline-none focus:ring-2 focus:ring-grass text-gray-200"
+            class="bg-gray-800 border border-gray-700 rounded p-3 focus:outline-none focus:ring-2 focus:ring-moss text-moss"
           />
           <textarea
             name="message"
             rows="4"
             placeholder="Tu mensaje"
             required
-            class="bg-gray-800 border border-gray-700 rounded p-3 focus:outline-none focus:ring-2 focus:ring-grass text-gray-200"
+            class="bg-gray-800 border border-gray-700 rounded p-3 focus:outline-none focus:ring-2 focus:ring-moss text-moss"
           ></textarea>
           <button
             type="submit"
-            class="md:col-span-2 bg-grass text-black py-3 rounded font-medium hover:bg-green-500 transition"
+            class="md:col-span-2 bg-moss text-black py-3 rounded font-medium hover:bg-green-500 transition"
           >
             Enviar mensaje
           </button>
         </form>
       </section>
+      </div>
     </main>
 
     <!-- FOOTER -->
     <footer class="bg-black border-t border-gray-800 py-6">
-      <div class="text-center text-gray-500">
+      <div class="text-center text-moss-light">
         &copy; 2025 Cereales Ducret – Todos los derechos reservados.
       </div>
     </footer>
