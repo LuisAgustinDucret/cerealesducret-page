@@ -27,16 +27,16 @@
         class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between"
       >
         <img src="img/logo-LAD.gif" alt="Cereales Ducret" class="h-10" />
-        <nav class="space-x-6 hidden md:block">
-          <a href="#about" class="text-moss-light hover:text-moss transition"
-            >Quiénes somos</a
-          >
-          <a href="#products" class="text-moss-light hover:text-moss transition"
-            >Productos</a
-          >
-          <a href="#contact" class="text-moss-light hover:text-moss transition"
-            >Contacto</a
-          >
+        <nav class="hidden md:flex space-x-6">
+          <span class="p-0.5 bg-gradient-to-r from-moss to-mossLight rounded-lg">
+            <a href="#about" class="block px-4 py-2 rounded-lg bg-black text-moss-light hover:text-moss transition">Quiénes somos</a>
+          </span>
+          <span class="p-0.5 bg-gradient-to-r from-moss to-mossLight rounded-lg">
+            <a href="#products" class="block px-4 py-2 rounded-lg bg-black text-moss-light hover:text-moss transition">Productos</a>
+          </span>
+          <span class="p-0.5 bg-gradient-to-r from-moss to-mossLight rounded-lg">
+            <a href="#contact" class="block px-4 py-2 rounded-lg bg-black text-moss-light hover:text-moss transition">Contacto</a>
+          </span>
         </nav>
         <button
           id="btn-menu"
@@ -58,22 +58,17 @@
           </svg>
         </button>
       </div>
-      <div id="menu" class="hidden bg-black border-b border-gray-800 md:hidden">
-        <a
-          href="#about"
-          class="block px-4 py-2 text-moss-light hover:text-moss transition"
-          >Quiénes somos</a
-        >
-        <a
-          href="#products"
-          class="block px-4 py-2 text-moss-light hover:text-moss transition"
-          >Productos</a
-        >
-        <a
-          href="#contact"
-          class="block px-4 py-2 text-moss-light hover:text-moss transition"
-          >Contacto</a
-        >
+        <div id="menu" class="hidden bg-black border-b border-gray-800 md:hidden space-y-2 p-4">
+          <div class="p-0.5 bg-gradient-to-r from-moss to-mossLight rounded-lg">
+            <a href="#about" class="block px-4 py-2 rounded-lg bg-black text-moss-light hover:text-moss transition">Quiénes somos</a>
+          </div>
+          <div class="p-0.5 bg-gradient-to-r from-moss to-mossLight rounded-lg">
+            <a href="#products" class="block px-4 py-2 rounded-lg bg-black text-moss-light hover:text-moss transition">Productos</a>
+          </div>
+          <div class="p-0.5 bg-gradient-to-r from-moss to-mossLight rounded-lg">
+            <a href="#contact" class="block px-4 py-2 rounded-lg bg-black text-moss-light hover:text-moss transition">Contacto</a>
+          </div>
+        </div>
       </div>
     </header>
 
